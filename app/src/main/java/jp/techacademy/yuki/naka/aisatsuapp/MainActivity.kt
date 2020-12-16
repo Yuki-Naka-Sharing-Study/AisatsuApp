@@ -13,12 +13,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.setOnClickListener(this)
         button3.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.button1) {
+        if (v.id == R.id.button3) {
             textView.text = editText.text.toString()
         } else if (v.id == R.id.button3) {
             showTimePickerDialog()
