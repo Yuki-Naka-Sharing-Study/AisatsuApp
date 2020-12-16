@@ -19,9 +19,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
             R.id.button1 -> showTimePickerDialog()
+        }
     }
 
-    private fun showTimePickerDialog() {
+    fun showTimePickerDialog() {
         val timePickerDialog = TimePickerDialog(
                 this,
                 TimePickerDialog.OnTimeSetListener { view, hour, minute ->
